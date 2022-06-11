@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header-style.css">
+    <script src="log-in-script.js" defer></script>
+</head>
+<body>
+    <header class="container">
+        <button id="menu_button" class="menu">
+            <div class="menu_line1"></div>
+            <div class="menu_line2"></div>
+        </button>
+        <p class="header_name_p">Загрязнение<br>водоемов.by</p>
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../Rating_by/pollution.html">Рейтинг</a></li>
+            <li><a href="../Pollution/map.html">Карта</a></li>
+            <li class="header_ul_last_child"><a href="../Articles_by/articles.html">Статьи</a></li>
+        </ul>
+        <button class="header_button" id="header_log_in_button">Войти</button>
+    </header>
+
+    <div id="login_form" class="log_in_bg_div z_index0">
+        <div class="log_in_div">
+            <form action="">
+                <input class="log_in_input input_width" type="text" placeholder="ЛОГИН">
+                <div class="div_input">
+                    <input id="password" class="password_input input_width" type="password" placeholder="ПАРОЛЬ">
+                    <button id="view_button" class="password_view">
+                        <img id="view_img" src="img/view.png" alt="">
+                        <img class="display_none" id="hide_img" src="img/hide.png" alt="">
+                    </button>
+                </div>
+                <button class="form_enter input_width">Вход</button>
+                <a href="" class="create_account">Создать аккаунт</a>
+            </form>
+        </div>
+    </div>
+
+    <div id="full_menu_bg" class="full_menu_bg z_index0">
+        <div id="full_menu" class="full_menu">
+            <button id="full_menu_close"><img src="img/close.png" alt=""></button>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../Rating_by/pollution.html">Рейтинг</a></li>
+                <li><a href="../Pollution/map.html">Карта</a></li>
+                <li><a href="../Articles_by/articles.html">Статьи</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container rating">
+        <h1>Самые загрязненные реки Беларуси:</h1>
+        <ul class="river_list">
+            <li>
+                <h2>1.Река Свислочь   (10)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+            <li>
+                <h2>2.Река Уза   (9)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+            <li>
+                <h2>3.Река Плисса   (7)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+            <li>
+                <h2>4.Река Буг (Западный)   (6)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+            <li>
+                <h2>5.Река Морочь   (4)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+            <li>
+                <h2>6.Река Неман   (4)</h2>
+                <div class="li_img">
+                    <img src="img/Svisloch.png" alt="">
+                    <img src="img/Svisloch.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="div_button_next_10">
+        <button id="next3" class="next_10">Следующие 3</button>
+    </div>
+
+    <footer>
+        <p class="footer_p">Загрязнение<br>водоемов.by</p>
+    </footer>
+</body>
+</html>

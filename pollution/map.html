@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="header-style.css">
+    <script src="log-in-script.js" defer></script>
+</head>
+<body>
+    <header class="container">
+        <button id="menu_button" class="menu">
+            <div class="menu_line1"></div>
+            <div class="menu_line2"></div>
+        </button>
+        <p class="header_name_p">Загрязнение<br>водоемов.by</p>
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../Rating_by/pollution.html">Рейтинг</a></li>
+            <li><a href="../Pollution/map.html">Карта</a></li>
+            <li class="header_ul_last_child"><a href="../Articles_by/articles.html">Статьи</a></li>
+        </ul>
+        <button class="header_button" id="header_log_in_button">Войти</button>
+    </header>
+
+    <div id="login_form" class="log_in_bg_div z_index0">
+        <div class="log_in_div">
+            <form action="">
+                <input class="log_in_input input_width" type="text" placeholder="ЛОГИН">
+                <input id="password" class="password_input input_width" type="password" placeholder="ПАРОЛЬ">
+                <button id="view_button" class="password_view">
+                    <img id="view_img" src="images/view.png" alt="">
+                    <img class="display_none" id="hide_img" src="images/hide.png" alt="">
+                </button>
+                <button class="form_enter input_width">Вход</button>
+                <a href="" class="create_account">Создать аккаунт</a>
+            </form>
+        </div>
+    </div>
+
+    <div id="full_menu_bg" class="full_menu_bg z_index0">
+        <div id="full_menu" class="full_menu">
+            <button id="full_menu_close"><img src="images/close.png" alt=""></button>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../Rating_by/pollution.html">Рейтинг</a></li>
+                <li><a href="../Pollution/map.html">Карта</a></li>
+                <li><a href="../Articles_by/articles.html">Статьи</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="monitorh1">Мониторинг поверхностных вод Беларуси</h1>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<d27bc46b-9b61-4092-9cd3-dd4aa76247ab>" type="text/javascript"></script>
+    <script src="map.js" type="text/javascript"></script>
+
+
+    <div id="map"></div>
+
+    <div class="backgroundContainer">
+        <div class="container">
+            <div class="pinsDiv">
+                <h2 class="pinDescription">Условные обозначения на карте</h2>
+            </div>
+        </div>
+    </div>  
+
+
+    <div class="backgroundContainerWithPins">
+        <div class="container">
+            <div class="good">
+                <p class="goodText"><img class="greenPin" src="images/pinGreen.png" alt="" width="60px">Загрязнение воды отстутствует или минимально  (10-8)</p>
+            </div>
+
+            <div class="middle">
+                <p class="middleText"><img class="yellowPin" src="images/pinYellow.png" alt="" width="60px">Загрязнение воды присутствует в средних количествах  (7-5)</p>
+            </div>
+
+            <div class="bad">
+                <p class="badText"><img class="redPin" src="images/pinRed.png" alt="" width="60px">Загрязнение воды сильное  (4-2)</p>
+            </div>
+
+            <div class="danger">
+                <p class="dangerText"><img class="dangerPin" src="images/pinDanger.png" alt="" width="60px">Места не соответствующие микробиологическим нормам  (1-0)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer_p">Загрязнение<br>водоемов.by</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; -->

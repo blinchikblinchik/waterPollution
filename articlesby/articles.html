@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="articles.css">
+    <script src="log-in-script.js" defer></script>
+</head>
+<body>
+    <header class="container">
+        <button id="menu_button" class="menu">
+            <div class="menu_line1"></div>
+            <div class="menu_line2"></div>
+        </button>
+        <p class="header_name_p">Загрязнение<br>водоемов.by</p>
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../ratingby/pollution.html">Рейтинг</a></li>
+            <li><a href="../pollution/map.html">Карта</a></li>
+            <li class="header_ul_last_child"><a href="../articlesby/articles.html">Статьи</a></li>
+        </ul>
+        <button class="header_button" id="header_log_in_button">Войти</button>
+    </header>
+
+    <div id="login_form" class="log_in_bg_div z_index0">
+        <div class="log_in_div">
+            <form action="">
+                <input class="log_in_input input_width" type="text" placeholder="ЛОГИН">
+                <div class="input_div">
+                    <input id="password" class="password_input input_width" type="password" placeholder="ПАРОЛЬ">
+                    <button id="view_button" class="password_view">
+                        <img id="view_img" src="img/view.png" alt="">
+                        <img class="display_none" id="hide_img" src="img/hide.png" alt="">
+                    </button>
+                </div>
+                <button class="form_enter input_width">Вход</button>
+                <a href="" class="create_account">Создать аккаунт</a>
+            </form>
+        </div>
+    </div>
+
+    <div id="full_menu_bg" class="full_menu_bg z_index0">
+        <div id="full_menu" class="full_menu">
+            <button id="full_menu_close"><img src="img/close.png" alt=""></button>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../ratingby/pollution.html">Рейтинг</a></li>
+                <li><a href="../pollution/map.html">Карта</a></li>
+                <li><a href="../articlesby/articles.html">Статьи</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container flex">
+        <div class="article">
+            <img src="img/img1.png" alt="">
+            <div class="article_text">
+                <h2>Виды загрязнения водоемов</h2>
+                <p>Органическим (фенолами, нафтеновыми кислотами, пестицидами и др.);
+                Неорганическим (солями, кислотами, щелочами);
+                Токсичным (мышьяком; соединениями ртути, свинца, кадмия и др.);
+                Нетоксичным.</p>
+                <a href="../articleby1/article.html">Читать далее...</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/img2.png" alt="">
+            <div class="article_text">
+                <h2>Загрязнение воды - катастрофа для человека и всего живого</h2>
+                <p>21 век – век цифровой техники и нанотехнологий. Человеком уже столько изобретено и придумано для своего удобство, что можно было жить и не знать никаких проблем. Но проблем тоже становится все больше.</p>
+                <a href="../articleby2/article.html">Читать далее...</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/img3.png" alt="">
+            <div class="article_text">
+                <h2>В Беларуси собираются внедрить комплексный подход к охране рек, озер и болот</h2>
+                <p>Масштабный проект «Сохранение и устойчивое управление пресноводными экосистемами международной значимости» сейчас находится на рассмотрении в Глобальном экологическом фонде. Его разработали Министерство природных ресурсов и охраны окружающей среды совместно с Национальной академией наук.</p>
+                <a href="../articleby3/article.html">Читать далее...</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/img4.png" alt="">
+            <div class="article_text">
+                <h2>Почему в реки попадает отравленная вода предприятий</h2>
+                <p>Производители и поставщики очистных сооружений просят ввести в Беларуси обязательную сертификацию. Это сделает конкуренцию на рынке более честной, а окружающую среду – более чистой.</p>
+                <a href="../articleby4/article.html">Читать далее...</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Загрязнение<br>водоемов.by</p>
+    </footer>
+</body>
+</html>
